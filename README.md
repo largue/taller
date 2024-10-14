@@ -1,9 +1,10 @@
 # taller
-Spring Boot API Rest demo para la gestión de un taller mecánico de bicicletas.
+Spring Boot API Rest. CRUD para la gestión de un taller mecánico de bicicletas.
 
 - Spring Initializr
 - Spring Boot
+- Java 17
 - MongoDB
 - Internacionalización con API ResourceBundle
-- Javax Validation
+- jakarta.validation en sustitución de javax.validation
 - Librería Lombok
