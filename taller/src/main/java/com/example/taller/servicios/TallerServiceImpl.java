@@ -56,7 +56,7 @@ public class TallerServiceImpl implements TallerService {
 			logger.debug(mensaje, mwe);
 		}
 		
-		return new RespuestaServicio(mensaje.substring(0, 2), mensaje.substring(4, mensaje.length() - 1));
+		return new RespuestaServicio(mensaje);
 	}
 	
 	public RespuestaServicio recogerBiciCliente(int numSerie) {
@@ -78,7 +78,7 @@ public class TallerServiceImpl implements TallerService {
 			}
 		}
 		
-		return new RespuestaServicio(mensaje.substring(0, 2), mensaje.substring(4, mensaje.length() - 1));
+		return new RespuestaServicio(mensaje);
 	}
 
 	@Override
@@ -97,7 +97,7 @@ public class TallerServiceImpl implements TallerService {
 			mensaje = StaticBundle.getInstance().getString("actualizar.estado.reparacion");
 		}
 		
-		return new RespuestaServicio(mensaje.substring(0, 2), mensaje.substring(4, mensaje.length() - 1));
+		return new RespuestaServicio(mensaje);
 	}
 	
 	private Bicicleta buscarBicicleta(int numSerie) {
